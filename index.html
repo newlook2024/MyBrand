@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header/mybrandTablogo.png" type="image/x-icon">
+    <title>MyBrend shop</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:wght@900&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container flex">
+            <a href="#" class="header__logo flex pointer">
+                <img style="width: 100%;" src="./images/header/headerLogo.svg" alt="MyBrand Logo">
+            </a>
+            <ul class="nav__list flex" id="list">
+                <button class="header__close__btn" id="close">
+                    <svg width="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path style="fill:#FF6465;"
+                                d="M256.001,512c141.384,0,255.999-114.615,255.999-256.001C512.001,114.615,397.386,0,256.001,0 S0.001,114.615,0.001,256.001S114.616,512,256.001,512z">
+                            </path>
+                            <path style="opacity:0.1;enable-background:new ;"
+                                d="M68.873,256.001c0-129.706,96.466-236.866,221.564-253.688 C279.172,0.798,267.681,0,256.001,0C114.616,0,0.001,114.615,0.001,256.001S114.616,512.001,256,512.001 c11.68,0,23.171-0.798,34.436-2.313C165.339,492.865,68.873,385.705,68.873,256.001z">
+                            </path>
+                            <path style="fill:#FFFFFF;"
+                                d="M313.391,256.001l67.398-67.398c4.899-4.899,4.899-12.842,0-17.74l-39.65-39.65 c-4.899-4.899-12.842-4.899-17.74,0l-67.398,67.398l-67.398-67.398c-4.899-4.899-12.842-4.899-17.74,0l-39.65,39.65 c-4.899,4.899-4.899,12.842,0,17.74l67.398,67.398l-67.398,67.398c-4.899,4.899-4.899,12.842,0,17.741l39.65,39.65 c4.899,4.899,12.842,4.899,17.74,0l67.398-67.398L323.4,380.79c4.899,4.899,12.842,4.899,17.74,0l39.65-39.65 c4.899-4.899,4.899-12.842,0-17.741L313.391,256.001z">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+                <li class="nav__item"><a href="#" class="nav__link header__active">About us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Page</a></li>
+                <li class="nav__item relative">
+                    <button href="#" class="nav__link">Categories</button>
+                </li>
+            </ul>
+            <div class="header__icons flex">
+                <button class="header__burger header__responsive" id="burger">
+                    <img src="./images/header/burger.png" alt="menu">
+                </button>
+                <button class="header__user header__responsive">
+                    <img src="./images/header/user.png" alt="User">
+                </button>
+                <button class="header__search" id="searchBtn">
+                    <img src="./images/header/Search.png" alt="Search btn">
+                </button>
+                <button class="header__follow r__hidden">
+                    <img src="./images/header/Following.png" alt="Follow">
+                </button>
+                <button class="header__user r__hidden">
+                    <img src="./images/header/user.png" alt="User">
+                </button>
+            </div>
+            <input type="text" class="header__search_input" id="search" placeholder="Search anything">
+            <div class="search__close" id="search__close"></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__container container flex">
+            <div class="hero__img">
+                <img src="./images/home/hero/pink.png" alt="image download failed">
+            </div>
+            <div class="hero__info">
+                <sapn class="hero__mini__title">New collection</sapn>
+                <h1 class="hero__title">The gorgeus</h1>
+                <p class="hero__text">Choose clothes of your desire . All colors are in your hands . Be brighter</p>
+                <button class="hero__btn pointer">Shop now</button>
+            </div>
+        </div>
+    </section>
+    <section class="collection">
+        <div class="collection__container container flex">
+            <div class="collection__info">
+                <span class="hero__mini__title">New collection</span>
+                <h2 class="hero__title">The gorgeus</h2>
+                <p class="hero__text">
+                    Choose clothes of your desire . All colors are in your hands . Be brighter
+                </p>
+                <button class="collection__btn">
+                    Shop now
+                </button>
+            </div>
+            <div class="hero__img">
+                <img src="./images/home/collection/black.png" alt="download error">
+            </div>
+        </div>
+    </section>
+    <div class="dior">
+        <h4 class="dior__title">See all collections from DIOR</h4>
+    </div>
+    <section class="brends">
+        <div class="brends__container container">
+            <span class="brends__mini__title">All brends is here</span>
+            <h2 class="brends__title">Chanel collection</h2>
+            <p class="brends__text">Make your best version with us</p>
+            <div class="brends__card__box" id="cards-box"></div>
+            <button class="brends__btn">
+                See all
+            </button>
+        </div>
+    </section>
+    <div class="dior">
+        <h4 class="dior__title">See all collections brends</h4>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
