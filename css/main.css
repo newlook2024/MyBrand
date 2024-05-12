@@ -754,6 +754,17 @@ ul {
         max-width: 135px;
         max-width: 135px;
     }
+
+    .partners__title{
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .partners__text{
+        font-size: 13px;
+        margin-bottom: 42px;
+    }
 }
 
 @media (max-width: 710px){
