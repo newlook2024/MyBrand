@@ -188,7 +188,7 @@ ul {
     }
 
     .nav__list {
-        position: absolute;
+        position: fixed;
         width: 50%;
         min-height: 100vh;
         flex-direction: column;
@@ -384,6 +384,7 @@ ul {
 
     .collection__info {
         position: absolute;
+        left: 0;
         top: 84px;
         max-width: none;
         width: 100%;
@@ -494,7 +495,7 @@ ul {
 }
 
 .brends__btn {
-    padding: 13px 40px;
+    padding: 13px 35px;
     color: white;
     font-family: Ponnala, sans-serif;
     font-size: 13px;
@@ -502,9 +503,10 @@ ul {
     line-height: 22.84px;
     display: none;
     background: #D1808F;
+    border-radius: 9px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 9px;
+    border: 2px solid #D1808F;
     width: 122px;
     height: 39px;
     align-items: center;
@@ -531,11 +533,11 @@ ul {
         padding: 59px 0 99px 0;
     }
 
-    .brends__btn{
+    .brends__btn {
         display: flex;
     }
 
-    .brends__btn:hover{
+    .brends__btn:hover {
         background: transparent;
         border: 2px solid #D1808F;
         color: #D1808F;
