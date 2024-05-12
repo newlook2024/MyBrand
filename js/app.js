@@ -28,6 +28,7 @@ searchClose.addEventListener('click', () => {
 //  BRENDS FUNCTIONS
 
 let cardBox = document.getElementById('cards-box')
+let cardBox1 = document.getElementById('cards-box1')
 let cardData = [
     {
         Image: "./images/home/brends/1.png",
@@ -91,4 +92,64 @@ cardData.forEach((item, index) => {
     }
 
     cardBox.appendChild(a)
+})
+//  BEST SECTION STYLES
+
+let bestCardBox = document.getElementById('best-card-box')
+let bestData = [
+    {
+        img: "./images/home/best/1.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/2.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/3.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/4.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/5.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/6.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/7.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/8.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/9.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/10.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/11.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+    {
+        img: "./images/home/best/12.png",
+        text: "Daradrpipara’s Content -  Bellazon ",
+    },
+]
+
+bestData.forEach((item, index) => {
+    let a = document.createElement('div')
+    a.classList.add('best__card')
+    a.innerHTML = `<img src="${item.img}" alt="rasm"> <p class="best__card__text">${item.text}</p>`
+    bestCardBox.appendChild(a)
 })
