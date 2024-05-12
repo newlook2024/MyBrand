@@ -491,6 +491,8 @@ ul {
     max-width: 294px;
     max-height: 400px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 36px;
 }
 
@@ -612,12 +614,15 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 47px;
     row-gap: 40px;
+
 }
 
 .best__card {
     max-width: 294px;
     max-height: 400px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     position: relative;
 }
@@ -660,6 +665,12 @@ ul {
         margin-bottom: 56px;
     }
 
+    .best__cards__container {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 }
 
@@ -673,5 +684,80 @@ ul {
 
     .best__card__text {
         font-size: 10px;
+    }
+}
+
+/* === BEST STYLES END === */
+/* === PARTNERS STYLES START === */
+
+.partners {
+    padding: 42px 0 121px 0;
+}
+
+.partners__container {
+    max-width: 1024px;
+}
+
+.partners__mini__title {
+    font-family: Proza Libre, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.29px;
+    justify-content: center;
+    margin-bottom: 9px;
+}
+
+.partners__title {
+    font-family: Proza Libre, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 54.3px;
+    margin-bottom: 9px;
+    justify-content: center;
+}
+
+.partners__text {
+    font-family: Proza Libre, sans-serif;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.48px;
+    margin-bottom: 82px;
+}
+
+.partners__icon__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 109px;
+    row-gap: 75px;
+}
+
+.partners__icon {
+    max-width: 167px;
+    max-height: 169px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 900px) {
+    .partners {
+        padding: 61px 0 40px 0;
+    }
+
+    .partners__icon__box {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .partners__icon{
+        max-width: 135px;
+        max-width: 135px;
+    }
+}
+
+@media (max-width: 710px){
+    .partners__icon__box{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
