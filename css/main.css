@@ -826,6 +826,10 @@ html {
     cursor: url("../pointer.svg"), default;
 }
 
+.footer__link:hover{
+    color: #deec61;
+}
+
 .footer__signUp {
     max-width: 477px;
     width: 100%;
@@ -874,8 +878,15 @@ html {
     border-radius: 10px;
     display: inline-flex;
     font-size: 14px;
+    border: 1px solid transparent;
     font-weight: 400;
     line-height: 24.6px;
+}
+
+.register__btn:hover{
+    background: transparent;
+    border: 1px solid #be1768;
+    color: #be1768;
 }
 
 .web__address__box {
