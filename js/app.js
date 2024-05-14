@@ -228,4 +228,4 @@ partners_icon.forEach((item, index) => {
     a.classList.add('partners__icon')
     a.innerHTML = `<img src="${item.img}" alt="icon">`
     partnersBox.appendChild(a)
-})
+})  
