@@ -4,13 +4,26 @@ let list = document.getElementById('list')
 let search = document.getElementById('search')
 let searchClose = document.getElementById('search__close')
 let searchBtn = document.getElementById('searchBtn')
+let closeSection = document.querySelector('#menuCloseSection')
 
 burger.addEventListener('click', () => {
     list.style.right = "0"
+    document.body.style.overflow = 'hidden'
+    closeSection.style.zIndex = '1'
+    closeSection.style.opacity = '1'
 })
 
 close.addEventListener('click', () => {
     list.style.right = "-100%"
+    document.body.style.overflow = 'auto'
+    closeSection.style.zIndex = '-1'
+    closeSection.style.opacity = '0'
+})
+closeSection.addEventListener('click', () => {
+    list.style.right = "-100%"
+    document.body.style.overflow = 'auto'
+    closeSection.style.zIndex = '-1'
+    closeSection.style.opacity = '0'
 })
 
 searchBtn.addEventListener('click', () => {
@@ -228,4 +241,24 @@ partners_icon.forEach((item, index) => {
     a.classList.add('partners__icon')
     a.innerHTML = `<img src="${item.img}" alt="icon">`
     partnersBox.appendChild(a)
-})  
+})
+
+let emailTester = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+let footerInp = document.querySelector('#footer-inp')
+let form = document.getElementById('form')
+let submit = document.getElementById('submit')
+
+footerInp.addEventListener('input', (e) => {
+    if (!footerInp.value.match(emailTester)) {
+        submit.classList.remove('trueBtn')
+    } else {
+        submit.classList.add('trueBtn')
+    }
+})
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    footerInp.value = null
+    submit.classList.remove('trueBtn')
+})
+

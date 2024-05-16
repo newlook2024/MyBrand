@@ -25,3 +25,11 @@ searchClose.addEventListener('click', () => {
     search.value = ''
 })
 
+let heroImg = document.querySelectorAll('#hero-img')
+let mainImg = document.querySelector('#m-hero-img')
+
+heroImg.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        mainImg.src = item.src
+    })
+})
