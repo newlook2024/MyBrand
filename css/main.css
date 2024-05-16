@@ -1410,6 +1410,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 120px;
+    transition: all 0.3s;
 }
 
 .about__img {
@@ -1417,7 +1418,13 @@ html {
     max-height: 201px;
     width: 100%;
     display: flex;
+    transition: all 0.3s;
     border-radius: 36px;
+    filter: none;
+}
+
+.about__imageBox:hover .about__img:not(:hover){
+    filter: blur(3px);
 }
 
 .about__img__box1 {
@@ -1425,6 +1432,7 @@ html {
     transform: translateX(-48px);
     flex-direction: column;
     gap: 104px;
+    transition: all 0.3s;
 }
 
 .about__img__box1>img {
