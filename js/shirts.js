@@ -95,6 +95,10 @@ Data.forEach((item, index) => {
         </button>
     `
 
+    if (item.id > 8) {
+        a.classList.add('T-shirt__hidden')
+    }
+
     cardBox.appendChild(a)
 })
 

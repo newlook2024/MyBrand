@@ -177,7 +177,7 @@ let bestData = [
 bestData.forEach((item, index) => {
     let a = document.createElement('div')
     a.classList.add('best__card')
-    a.innerHTML = `<img src="${item.img}" alt="rasm"> <p class="best__card__text">${item.text}</p>`
+    a.innerHTML = `<a href='#' class="pointer"><img src="${item.img}" alt="rasm"> <p class="best__card__text">${item.text}</p></a>`
     if (item.id > 6) {
         a.classList.add('r__hidden')
     }
