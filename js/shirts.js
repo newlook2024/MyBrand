@@ -40,58 +40,62 @@ searchClose.addEventListener('click', () => {
     searchBtn.style.display = 'flex'
 })
 
-let heroImg = document.querySelectorAll('#hero-img')
-let mainImg = document.querySelector('#m-hero-img')
-
-heroImg.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        mainImg.src = item.src
-    })
-})
-
-
-let offerCardBox = document.getElementById('offerCardBox')
-let offerCard = [
+let Data = [
     {
-        img: "../images/home/best/1.png",
-        text: "Daradrpipara’s Content -  Bellazon ",
-        id: 1
+        img: "../images/products/1.png",
+        id: '1',
     },
     {
-        img: "../images/home/best/2.png",
-        text: "Daradrpipara’s Content -  Bellazon ",
-        id: 2
+        img: "../images/products/2.png",
+        id: '2',
     },
     {
-        img: "../images/home/best/3.png",
-        text: "Daradrpipara’s Content -  Bellazon ",
-        id: 3
+        img: "../images/products/3.png",
+        id: '3',
     },
     {
-        img: "../images/home/best/4.png",
-        text: "Daradrpipara’s Content -  Bellazon ",
-        id: 4
+        img: "../images/products/4.png",
+        id: '4',
     },
     {
-        img: "../images/home/best/5.png",
-        text: "Daradrpipara’s Content -  Bellazon ",
-        id: 5
+        img: "../images/products/5.png",
+        id: '5',
     },
     {
-        img: "../images/home/best/6.png",
-        text: "Daradrpipara’s Content -  Bellazon ",
-        id: 6
+        img: "../images/products/6.png",
+        id: '6',
+    },
+    {
+        img: "../images/products/7.png",
+        id: '7',
+    },
+    {
+        img: "../images/products/8.png",
+        id: '8',
+    },
+    {
+        img: "../images/products/9.png",
+        id: '9',
     },
 ]
+let cardBox = document.getElementById('cardBox')
 
-offerCard.forEach((item, index) => {
+Data.forEach((item, index) => {
     let a = document.createElement('div')
-    a.classList.add('best__card')
-    a.innerHTML = `<img src="${item.img}" alt="rasm"> <p class="best__card__text">${item.text}</p>`
-    if (item.id > 4) {
-        a.classList.add('r__hidden')
-    }
-    offerCardBox.appendChild(a)
+    a.classList.add('T-shirts__card')
+    a.innerHTML =
+        `
+    <img src="${item.img}" alt="T-shirt image">
+    <div class="card__modal">
+        <button class="card__modal__btn">
+            <img src="../images/products/likeBtn.png" alt="💜">
+        </button>
+        <button class="card__modal__btn">
+            <img src="../images/products/shoppingBag.png" alt="👜">
+        </button>
+    `
+
+    cardBox.appendChild(a)
 })
 
 let emailTester = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/

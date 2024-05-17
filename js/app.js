@@ -30,12 +30,14 @@ searchBtn.addEventListener('click', () => {
     searchClose.style.display = 'flex'
     search.style.display = 'flex'
     search.focus()
+    searchBtn.style.display = "none"
 })
 
 searchClose.addEventListener('click', () => {
     search.style.display = 'none'
     searchClose.style.display = 'none'
     search.value = ''
+    searchBtn.style.display = "flex"
 })
 
 //  BRENDS FUNCTIONS

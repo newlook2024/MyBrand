@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/header/mybrandTablogo.png" type="image/x-icon">
-    <title>MyBrend shop</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="../images/header/mybrandTablogo.png" type="image/x-icon">
+    <title>MyBrand/About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,17 +14,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:wght@900&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="a-header">
         <div class="header__container container flex">
-            <a href="#" class="header__logo flex pointer">
-                <img style="width: 100%;" src="./images/header/headerLogo.svg" alt="MyBrand Logo">
+            <a href="../index.html" class="header__logo flex pointer">
+                <img style="width: 100%;" src="../images/header/headerLogo.svg" alt="MyBrand Logo">
             </a>
-            <ul class="nav__list flex" id="list">
+            <ul class="nav__list bg flex" id="list">
                 <button class="header__close__btn" id="close">
                     <svg width="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve"
@@ -45,30 +43,31 @@
                         </g>
                     </svg>
                 </button>
-                <li class="nav__item"><a href="#" class="nav__link pointer header__active">About us</a></li>
-                <li class="nav__item"><a href="./html/about.html" class="nav__link pointer">Shop</a></li>
-                <li class="nav__item"><a href="./html/shirts.html" class="nav__link pointer">Products</a></li>
-                <li class="nav__item"><a href="#" class="nav__link pointer">Blog</a></li>
-                <li class="nav__item"><a href="#" class="nav__link pointer">Page</a></li>
+                <li class="nav__item"><a href="../index.html" id="about" class="nav__link pointer">About us</a></li>
+                <li class="nav__item"><a href="./about.html" id="about" class="nav__link pointer">Shop</a></li>
+                <li class="nav__item"><a href="#" id="about" class="nav__link pointer a-header__active">Products</a>
+                </li>
+                <li class="nav__item"><a href="#" id="about" class="nav__link pointer">Blog</a></li>
+                <li class="nav__item"><a href="#" id="about" class="nav__link pointer">Page</a></li>
                 <li class="nav__item relative">
-                    <button href="#" class="nav__link">Categories</button>
+                    <button id="about" href="#" class="nav__link">Categories</button>
                 </li>
             </ul>
             <div class="header__icons flex">
                 <button class="header__burger header__responsive" id="burger">
-                    <img src="./images/header/burger.png" alt="menu">
+                    <img src="../images/header/burger.png" alt="menu">
                 </button>
                 <button class="header__user header__responsive">
-                    <img src="./images/header/user.png" alt="User">
+                    <img src="../images/header/user.png" alt="User">
                 </button>
                 <button class="header__search" id="searchBtn">
-                    <img src="./images/header/Search.png" alt="Search btn">
+                    <img src="../images/header/Search.png" alt="Search btn">
                 </button>
                 <button class="header__follow r__hidden">
-                    <img src="./images/header/Following.png" alt="Follow">
+                    <img src="../images/header/Following.png" alt="Follow">
                 </button>
                 <button class="header__user r__hidden">
-                    <img src="./images/header/user.png" alt="User">
+                    <img src="../images/header/user.png" alt="User">
                 </button>
             </div>
             <input type="text" class="header__search_input" id="search" placeholder="Search anything">
@@ -76,76 +75,71 @@
         </div>
         <div id="menuCloseSection"></div>
     </header>
-    <section class="hero">
-        <div class="hero__container container flex">
-            <div class="hero__img">
-                <img src="./images/home/hero/pink.png" alt="image download failed">
+    <section class="T-shirts">
+        <div class="T-shirts__container container flex">
+            <div class="T-shirts__listBox">
+                <ul class="T-shirst__list">
+                    <h3 class="T-shirts__list__title">Categories</h3>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Women</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Men</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Shoes</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Bags & Accessories</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Top brands</a></li>
+                </ul>
+                <ul class="T-shirst__list">
+                    <h3 class="T-shirts__list__title">Women</h3>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Glamour</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Shoes</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Boho</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Bags & Accessories</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Tomboy</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Classic</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Sportiv</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Parties</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Casual</a></li>
+                </ul>
+                <ul class="T-shirst__list">
+                    <h3 class="T-shirts__list__title">Men</h3>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Trousers</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">T-shirts</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Bohem</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Jackets</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Sport</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Casual</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Business casual</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Business formal</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Bags & Accessories</a></li>
+                </ul>
+                <ul class="T-shirst__list">
+                    <h3 class="T-shirts__list__title">Shoes</h3>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Nike</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Adidas</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Puma</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">New Balance</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Reebok</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Puma</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Supra</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Cadillac</a></li>
+                </ul>
+                <ul class="T-shirst__list">
+                    <h3 class="T-shirts__list__title">Bags & Accesories</h3>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Tiffany</a></li>
+                    <li class="T-shirts__item"><a href="#" class="pointer T-shits__link">Cartier</a></li>
+                </ul>
             </div>
-            <div class="hero__info">
-                <sapn class="hero__mini__title">New collection</sapn>
-                <h1 class="hero__title">The gorgeus</h1>
-                <p class="hero__text">Choose clothes of your desire . All colors are in your hands . Be brighter</p>
-                <button class="hero__btn pointer">Shop now</button>
+            <div class="T-shirts__info">
+                <h2 class="T-shirts__title">
+                    We have selected the best for you
+                </h2>
+                <div id="cardBox" class="T-shirts__card__box"></div>
+                <button class="T-shirt__btn">See all</button>
             </div>
-        </div>
-    </section>
-    <section class="collection">
-        <div class="collection__container container flex">
-            <div class="collection__info">
-                <span class="hero__mini__title">New collection</span>
-                <h2 class="hero__title">The gorgeus</h2>
-                <p class="hero__text">
-                    Choose clothes of your desire . All colors are in your hands . Be brighter
-                </p>
-                <button class="collection__btn">
-                    Shop now
-                </button>
-            </div>
-            <div class="hero__img">
-                <img src="./images/home/collection/black.png" alt="download error">
-            </div>
-        </div>
-    </section>
-    <div class="dior">
-        <h4 class="dior__title">See all collections from DIOR</h4>
-    </div>
-    <section class="brends">
-        <div class="brends__container container">
-            <span class="brends__mini__title">All brends is here</span>
-            <h2 class="brends__title">Chanel collection</h2>
-            <p class="brends__text">Make your best version with us</p>
-            <div class="brends__card__box" id="cards-box"></div>
-            <button class="brends__btn">
-                See all
-            </button>
-        </div>
-    </section>
-    <div class="dior1">
-        <h4 class="dior__title">See all brends</h4>
-    </div>
-    <section class="best">
-        <div class="best__container container">
-            <span class="best__mini__title">All brends is here</span>
-            <h2 class="best__tittle">DIOR collection</h2>
-            <p class="best__text">Make your best version with us</p>
-            <div class="best__cards__container" id="best-card-box"></div>
-            <button class="brends__btn">
-                See all
-            </button>
-        </div>
-    </section>
-    <section class="partners">
-        <div class="partners__container container">
-            <span class="flex partners__mini__title">All brends is here</span>
-            <h2 class="flex partners__title">All brends we have</h2>
-            <p class="flex partners__text">Make your best version with us</p>
-            <div class="partners__icon__box" id="partners-box"></div>
         </div>
     </section>
     <footer class="footer relative">
         <div class="footer__container container">
             <a href="#" class="footer__logo pointer">
-                <img src="./images/header/headerLogo.svg" alt="logo">
+                <img src="../images/header/headerLogo.svg" alt="logo">
             </a>
             <div class="footer__list__box">
                 <ul class="footer__list">
@@ -171,27 +165,27 @@
                     <div class="web__address__box">
                         <a href="#" class="web__link pointer flex">
                             <div class="foter__icon">
-                                <img src="./images/footer/facebook.png" alt="facebook">
+                                <img src="../images/footer/facebook.png" alt="facebook">
                             </div>
                         </a>
                         <a href="#" class="web__link pointer flex">
                             <div class="foter__icon">
-                                <img src="./images/footer/Instagram.png" alt="instagram">
+                                <img src="../images/footer/Instagram.png" alt="instagram">
                             </div>
                         </a>
                         <a href="#" class="web__link pointer flex">
                             <div class="foter__icon">
-                                <img src="./images/footer/Pinterest.png" alt="pinterest">
+                                <img src="../images/footer/Pinterest.png" alt="pinterest">
                             </div>
                         </a>
                         <a href="#" class="web__link pointer flex">
                             <div class="foter__icon">
-                                <img src="./images/footer/YouTube.png" alt="youtube">
+                                <img src="../images/footer/YouTube.png" alt="youtube">
                             </div>
                         </a>
                         <a href="#" class="web__link pointer flex">
                             <div class="foter__icon">
-                                <img src="./images/footer/TikTok.png" alt="TikTok">
+                                <img src="../images/footer/TikTok.png" alt="TikTok">
                             </div>
                         </a>
                     </div>
@@ -201,20 +195,21 @@
             <div class="flex footer__bottom">
                 <p class="copyright">@2024 , Myshop .All Rights Reserved. </p>
                 <div class="footer__bottom__icons">
-                    <img class="fb__icon" src="./images/footer/visa.png" alt="image">
-                    <img class="fb__icon" src="./images/footer/mestro.png" alt="image">
-                    <img class="fb__icon" src="./images/footer/mestro2.png" alt="image">
-                    <img class="fb__icon" src="./images/footer/amex.png" alt="image">
-                    <img class="fb__icon" src="./images/footer/ipay.png" alt="image">
+                    <img class="fb__icon" src="../images/footer/visa.png" alt="image">
+                    <img class="fb__icon" src="../images/footer/mestro.png" alt="image">
+                    <img class="fb__icon" src="../images/footer/mestro2.png" alt="image">
+                    <img class="fb__icon" src="../images/footer/amex.png" alt="image">
+                    <img class="fb__icon" src="../images/footer/ipay.png" alt="image">
                     <div class="bitcoin">
-                        <img src="./images/footer/bitcoin.svg" alt="image">
+                        <img src="../images/footer/bitcoin.svg" alt="image">
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="./js/app.js"></script>
+
+    <script src="../js/shirts.js"></script>
 </body>
 
 </html>
