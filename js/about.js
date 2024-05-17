@@ -99,7 +99,7 @@ let footerInp = document.querySelector('#footer-inp')
 let form = document.getElementById('form')
 let submit = document.getElementById('submit')
 
-footerInp.addEventListener('input', (e) => {
+footerInp.addEventListener('input', () => {
     if (!footerInp.value.match(emailTester)) {
         submit.classList.remove('trueBtn')
     } else {
@@ -109,6 +109,18 @@ footerInp.addEventListener('input', (e) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    footerInp.value = null
-    submit.classList.remove('trueBtn')
+    if (!footerInp.value.match(emailTester)) {
+        footerInp.placeholder = 'Please enter your email'
+        setTimeout(() => {
+            footerInp.placeholder = 'Enter your email adress'
+        }, 1500)
+    } else {
+        submit.textContent = 'Thanks'
+        footerInp.value = null
+        setTimeout(() => {
+            submit.textContent = 'Submit'
+        }, 2000)
+        submit.classList.remove('trueBtn')
+    }
 })
+

@@ -1908,3 +1908,10 @@ html {
         max-height: 500px;
     }
 }
+
+.T-shirts__card:hover > img {
+    transform: scale(1.1);
+}
+.T-shirts__card > img {
+    transition: all 0.2s;
+}
