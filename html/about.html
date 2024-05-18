@@ -273,6 +273,45 @@
             </div>
         </div>
     </footer>
+    <modals>
+        <section class="login__modal">
+            <div class="login__modal__contailer container">
+                <a href="../index.html" class="header__logo mb-71 flex pointer">
+                    <img src="../images/header/headerLogo.svg" alt="myBrend">
+                </a>
+                <div class="login__btnsBox">
+                    <button class="login__btn log__active" id="logBtn">Log in</button>
+                    <button class="login__btn" id="sigBtn">Sign in</button>
+                </div>
+                <form action="/" class="login__form" id="login">
+                    <div>
+                        <label for="email" class="login__label">Enter your email adress.</label>
+                        <input type="email" name="email" id="email" class="login__inp">
+                    </div>
+                    <div>
+                        <label for="password" class="login__label">Enter your password.</label>
+                        <input type="password" name="password" id="password" class="login__inp">
+                    </div>
+                    <button class="ligin__submit" id="send">Submit</button>
+                </form>
+                <form action="/" class="signin__form hidden" id="signin">
+                    <div>
+                        <label for="name" class="login__label">First Name</label>
+                        <input type="text" name="Name" id="name" class="login__inp">
+                    </div>
+                    <div>
+                        <label for="lastName" class="login__label">Last Name</label>
+                        <input type="text" name="Name" id="lastName" class="login__inp">
+                    </div>
+                    <div>
+                        <label for="password" class="login__label">Password</label>
+                        <input type="password" name="Name" id="password" class="login__inp">
+                    </div>
+                    <button class="ligin__submit" id="send">Submit</button>
+                </form>
+            </div>
+        </section>
+    </modals>
 
     <script src="../js/about.js"></script>
 </body>
