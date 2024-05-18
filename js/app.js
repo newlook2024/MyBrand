@@ -98,9 +98,9 @@ let cardData = [
 cardData.forEach((item, index) => {
     let a = document.createElement('div')
     a.classList.add('brends__card')
-    a.innerHTML = `
+    a.innerHTML = `<a href="#" class="pointer">
     <img src="${item.Image}" alt="brend image">
-    <span class="flex brend__card__text">Load ${item.id}</span>
+    <span class="flex brend__card__text">Load ${item.id}</span></a>
     `
     if (item.id > 6) {
         a.classList.add('r__hidden')
@@ -274,3 +274,47 @@ form.addEventListener('submit', (e) => {
     }
 })
 
+const logBtn = document.getElementById('logBtn')
+const sigBtn = document.getElementById('sigBtn')
+const login = document.getElementById('login')
+const signin = document.getElementById('signin')
+let send = document.querySelectorAll('#send')
+let modal = document.querySelector('.login__modal')
+let user = document.querySelectorAll('.header__user')
+
+send.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        modal.style.transform = 'scale(0)'
+    })
+})
+
+user.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        document.body.style.overflow = 'hidden'
+        modal.style.transform = 'scale(1)'
+    })
+})
+
+login.addEventListener('submit', function (e) {
+    e.preventDefault()
+    document.body.style.overflow = 'auto'
+    
+})
+signin.addEventListener('submit', function (e) {
+    e.preventDefault()
+    document.body.style.overflow = 'auto'
+})
+
+logBtn.addEventListener('click', () => {
+    login.classList.remove('hidden')
+    signin.classList.add('hidden')
+    logBtn.classList.add('log__active')
+    sigBtn.classList.remove('log__active')
+})
+
+sigBtn.addEventListener('click', () => {
+    sigBtn.classList.add('log__active')
+    login.classList.add('hidden')
+    signin.classList.remove('hidden')
+    logBtn.classList.remove('log__active')
+})
