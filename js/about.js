@@ -148,7 +148,6 @@ user.forEach((item, index) => {
 login.addEventListener('submit', function (e) {
     e.preventDefault()
     document.body.style.overflow = 'auto'
-    
 })
 signin.addEventListener('submit', function (e) {
     e.preventDefault()
