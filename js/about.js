@@ -175,3 +175,4 @@ sigBtn.addEventListener('click', () => {
     signin.classList.remove('hidden')
     logBtn.classList.remove('log__active')
 })
+
