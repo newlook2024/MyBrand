@@ -2051,3 +2051,14 @@ html {
     }
 
 }
+
+
+.hero, .collection, .dior, .brends{
+    position: sticky;
+    z-index: -2;
+    top: -20vh;
+}
+
+.brends{
+    background: white;
+}

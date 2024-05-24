@@ -131,10 +131,18 @@ const signin = document.getElementById('signin')
 let send = document.querySelectorAll('#send')
 let modal = document.querySelector('.login__modal')
 let user = document.querySelectorAll('.header__user')
+let required = document.querySelectorAll('.req')
 
 send.forEach((item, index) => {
     item.addEventListener('click', () => {
-        modal.style.transform = 'scale(0)'
+        required.forEach((item1, index) => {
+            if
+                (required[0].value != '' & required[1].value != '' || required[2].value != '' & required[3].value != '' & required[4].value != '') {
+                modal.style.transform = 'scale(0)'
+                document.body.style.overflow = 'auto'
+                item1.value = ''
+            }
+        })
     })
 })
 
@@ -147,7 +155,7 @@ user.forEach((item, index) => {
 
 login.addEventListener('submit', function (e) {
     e.preventDefault()
-    document.body.style.overflow = 'auto'
+
 })
 signin.addEventListener('submit', function (e) {
     e.preventDefault()
